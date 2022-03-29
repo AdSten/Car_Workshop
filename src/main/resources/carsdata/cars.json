@@ -1,0 +1,9 @@
+[ {
+  "id" : "2e9509ad-00c6-4afa-8e19-fbcb272d641f",
+  "name" : "name1",
+  "registerNumber" : "GA 01001",
+  "model" : "Audi",
+  "colour" : "red",
+  "registryDate" : "2022-03-29",
+  "fixed" : false
+} ]
