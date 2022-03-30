@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Car</title>
+</head>
+<body style="background-color: dimgray">
+<div th:insert="~{fragments/navBar}"></div>
+<div style="text-align: center; color: maroon" th:if="${param.error}">This car is already in our workshop</div>
+<div style="text-align: center; color: blue" th:if="${param.done}">Car successfully added</div>
+<div class="container">
+<form th:object="${newCar}" method="post">
+    <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" th:field="*{name}" class="form-control" id="name">
+        <p style="color: maroon" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></p>
+    </div>
+    <div class="mb-3">
+        <label for="registerNumber" class="form-label">Register Number</label>
+        <input type="text" th:field="*{registerNumber}" class="form-control" id="registerNumber">
+        <p style="color: maroon"  th:if="${#fields.hasErrors('registerNumber')}" th:errors="*{registerNumber}"></p>
+    </div>
+    <div class="mb-3">
+        <label for="model" class="form-label">Model</label>
+        <input type="text" th:field="*{model}" class="form-control" id="model">
+        <p style="color: maroon"  th:if="${#fields.hasErrors('model')}" th:errors="*{model}"></p>
+    </div>
+    <div class="mb-3">
+        <label for="colour" class="form-label">Colour</label>
+        <input type="text" th:field="*{colour}" class="form-control" id="colour">
+        <p style="color: maroon"  th:if="${#fields.hasErrors('colour')}" th:errors="*{colour}"></p>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+</body>
+</html>

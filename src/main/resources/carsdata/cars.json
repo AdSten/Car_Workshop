@@ -1,9 +1,41 @@
 [ {
-  "id" : "2e9509ad-00c6-4afa-8e19-fbcb272d641f",
+  "id" : "162f8a4b-3baa-4496-a5ea-153321fefdd7",
+  "name" : "name4",
+  "registerNumber" : "GWE 00213",
+  "model" : "Honda",
+  "colour" : "Silver",
+  "registryDate" : "2022-03-30",
+  "fixed" : false
+}, {
+  "id" : "32ba2451-48b8-48ad-874f-84f28dd33120",
   "name" : "name1",
   "registerNumber" : "GA 01001",
   "model" : "Audi",
   "colour" : "red",
   "registryDate" : "2022-03-29",
+  "fixed" : false
+}, {
+  "id" : "58e5d79a-f171-4941-83e4-1a13f0f115ac",
+  "name" : "name5",
+  "registerNumber" : "GD AABB0",
+  "model" : "BMW",
+  "colour" : "Black",
+  "registryDate" : "2022-03-30",
+  "fixed" : false
+}, {
+  "id" : "76ebb9ba-ba4f-41f5-be2b-9303f79263af",
+  "name" : "name3",
+  "registerNumber" : "GPU 192AA",
+  "model" : "KIA",
+  "colour" : "Blue",
+  "registryDate" : "2022-03-30",
+  "fixed" : false
+}, {
+  "id" : "e6da82f1-c057-496d-b9c1-b338ce72830f",
+  "name" : "name2",
+  "registerNumber" : "GD 020AA",
+  "model" : "Suzuki",
+  "colour" : "black",
+  "registryDate" : "2022-03-30",
   "fixed" : false
 } ]

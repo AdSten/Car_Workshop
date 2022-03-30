@@ -4,8 +4,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.Type;
-
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 import java.time.LocalDate;
 import java.util.UUID;
 
@@ -18,6 +18,7 @@ public class Car {
 
     public static final String TABLE_NAME = "car";
     public static final String COLUMN_PREFIX = "c_";
+    private static final String NOT_EMPTY_MESSAGE = "The field cannot be empty";
 
     @Id
     @GeneratedValue
@@ -26,15 +27,21 @@ public class Car {
     private UUID id;
 
     @Column(name = COLUMN_PREFIX + "name", nullable = false)
+    @NotBlank(message = NOT_EMPTY_MESSAGE)
     private String name;
 
     @Column(name = COLUMN_PREFIX + "registerNumber", nullable = false, unique = true)
+    @NotBlank(message = NOT_EMPTY_MESSAGE)
+
     private String registerNumber;
 
     @Column(name = COLUMN_PREFIX + "model", nullable = false)
+    @NotBlank(message = NOT_EMPTY_MESSAGE)
+
     private String model;
 
     @Column(name = COLUMN_PREFIX + "colour", nullable = false)
+    @NotBlank(message = NOT_EMPTY_MESSAGE)
     private String colour;
 
     @Column(name = COLUMN_PREFIX + "registryDate", nullable = false)
@@ -43,12 +50,12 @@ public class Car {
     @Column(name = COLUMN_PREFIX + "isFixed", nullable = false)
     private boolean isFixed;
 
-    public Car(String name, String registerNumber, String model, String colour, LocalDate registryDate) {
+    public Car(String name, String registerNumber, String model, String colour) {
         this.name = name;
         this.registerNumber = registerNumber;
         this.model = model;
         this.colour = colour;
-        this.registryDate = registryDate;
+        this.registryDate = LocalDate.now();
         this.isFixed = false;
     }
 }
