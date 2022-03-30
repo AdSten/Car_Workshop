@@ -21,7 +21,7 @@ public class carController {
 
     @GetMapping("/")
     public String car(){
-        return "home";
+        return "index";
     }
 
     @GetMapping("/show")
