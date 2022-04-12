@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import java.io.File;
 import java.io.IOException;
+import java.time.LocalDate;
 import java.util.List;
 import java.util.UUID;
 
@@ -40,6 +41,16 @@ public class CarService {
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
+    }
+
+    public void saveRepairedCars(){
+        List<Car> repairedCars = carRepository.findAllByRepairDate(LocalDate.now());
+        try {
+            objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File("src/main/resources/carsdata/fixed/" + LocalDate.now()), repairedCars);
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+
     }
 
 }

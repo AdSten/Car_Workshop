@@ -37,6 +37,8 @@ public class CarController {
         car.setRepairDate(LocalDate.now());
         car.setFixed(true);
         carService.save(car);
+        carService.saveToFile();
+        carService.saveRepairedCars();
         return "redirect:/cars";
     }
 }

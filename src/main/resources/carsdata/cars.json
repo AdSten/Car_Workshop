@@ -1,50 +1,55 @@
 [ {
-  "id" : "17def1e5-d2dd-4fba-b96d-555b1f998c7c",
-  "name" : "name1",
-  "registerNumber" : "GA 01001",
-  "model" : "Audi",
-  "colour" : "red",
-  "registryDate" : "2022-03-29",
-  "fixed" : false
-}, {
-  "id" : "39eb2a8c-a709-4ff5-92df-ead58530602d",
-  "name" : "name3",
-  "registerNumber" : "GPU 192AA",
-  "model" : "KIA",
-  "colour" : "Blue",
-  "registryDate" : "2022-03-30",
-  "fixed" : false
-}, {
-  "id" : "4342f0fb-23c8-4eb4-9cd5-d1d9c2d18c91",
-  "name" : "name5",
-  "registerNumber" : "GD AABB0",
-  "model" : "BMW",
-  "colour" : "Black",
-  "registryDate" : "2022-03-30",
-  "fixed" : false
-}, {
-  "id" : "556625e8-e0d5-4cbc-865a-c54905c75a73",
+  "id" : "1f3d1f5e-01b4-4020-b83d-dc3340f0311d",
   "name" : "name6",
   "registerNumber" : "WE JDBDIS",
   "model" : "Skoda",
   "colour" : "Red",
   "registryDate" : "2022-03-30",
-  "fixed" : false
+  "repairDate" : "2022-04-12",
+  "fixed" : true
 }, {
-  "id" : "5f12415b-ae43-4e57-96b6-c9111968baa7",
+  "id" : "2f2a8002-d288-4fc9-8d04-0d0d9220115d",
   "name" : "name2",
   "registerNumber" : "GD 020AA",
   "model" : "Suzuki",
   "colour" : "black",
   "registryDate" : "2022-03-30",
-  "fixed" : false
+  "repairDate" : "2022-04-12",
+  "fixed" : true
 }, {
-  "id" : "79caab38-ec94-48df-9fc0-64f9aa9293b4",
+  "id" : "3ca473df-987e-4716-8352-566aece58c7e",
   "name" : "name4",
   "registerNumber" : "GWE 00213",
   "model" : "Honda",
   "colour" : "Silver",
   "registryDate" : "2022-03-30",
-  "fixed" : true,
-  "repairDate": "2022-03-30"
+  "repairDate" : "2022-03-30",
+  "fixed" : true
+}, {
+  "id" : "a8a89224-9725-4bd0-8988-fdb09b7dc6c0",
+  "name" : "name5",
+  "registerNumber" : "GD AABB0",
+  "model" : "BMW",
+  "colour" : "Black",
+  "registryDate" : "2022-03-30",
+  "repairDate" : null,
+  "fixed" : false
+}, {
+  "id" : "bbd13f22-6356-483d-9ed0-2811ff2a1c24",
+  "name" : "name3",
+  "registerNumber" : "GPU 192AA",
+  "model" : "KIA",
+  "colour" : "Blue",
+  "registryDate" : "2022-03-30",
+  "repairDate" : null,
+  "fixed" : false
+}, {
+  "id" : "c22311f8-2bff-4dc7-ba1c-4d552e6024fb",
+  "name" : "name1",
+  "registerNumber" : "GA 01001",
+  "model" : "Audi",
+  "colour" : "red",
+  "registryDate" : "2022-03-29",
+  "repairDate" : null,
+  "fixed" : false
 } ]

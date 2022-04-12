@@ -1,0 +1,19 @@
+[ {
+  "id" : "1f3d1f5e-01b4-4020-b83d-dc3340f0311d",
+  "name" : "name6",
+  "registerNumber" : "WE JDBDIS",
+  "model" : "Skoda",
+  "colour" : "Red",
+  "registryDate" : "2022-03-30",
+  "repairDate" : "2022-04-12",
+  "fixed" : true
+}, {
+  "id" : "2f2a8002-d288-4fc9-8d04-0d0d9220115d",
+  "name" : "name2",
+  "registerNumber" : "GD 020AA",
+  "model" : "Suzuki",
+  "colour" : "black",
+  "registryDate" : "2022-03-30",
+  "repairDate" : "2022-04-12",
+  "fixed" : true
+} ]
