@@ -18,17 +18,19 @@
         <th scope="col">Model</th>
         <th scope="col">Colour </th>
         <th scope="col">Registry Date</th>
-        <th scope="col">Is Fixed</th>
+        <th scope="col">Fix</th>
     </tr>
     </thead>
         <tbody>
-            <tr th:each="car: ${cars}">
+            <tr th:each="car: ${cars}" th:if="${car.isFixed()==false}">
                 <td th:text="${car.getName()}">
                 <td th:text="${car.getRegisterNumber()}">
                 <td th:text="${car.getModel()}">
                 <td th:text="${car.getColour()}">
                 <td th:text="${car.getRegistryDate()}">
-                <td th:text="${car.isFixed()}">
+                <td>
+                <a th:href="@{/cars/repair(carId=${car.getId()})}" class="btn btn-info" >repair</a>
+            </td>
             </tr>
             <tr>
         </tbody>

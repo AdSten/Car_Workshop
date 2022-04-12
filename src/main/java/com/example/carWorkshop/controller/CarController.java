@@ -1,11 +1,15 @@
 package com.example.carWorkshop.controller;
 
+import com.example.carWorkshop.model.Car;
 import com.example.carWorkshop.repository.CarRepository;
 import com.example.carWorkshop.service.CarService;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
+
+import java.time.LocalDate;
+import java.util.UUID;
 
 
 @Controller
@@ -25,5 +29,14 @@ public class CarController {
         ModelAndView mav = new ModelAndView("cars");
         mav.addObject("cars", carRepository.findAll());
         return mav;
+    }
+
+    @GetMapping("/repair")
+    public String repair(@RequestParam UUID carId){
+        Car car = carService.load(carId);
+        car.setRepairDate(LocalDate.now());
+        car.setFixed(true);
+        carService.save(car);
+        return "redirect:/cars";
     }
 }

@@ -9,7 +9,7 @@
 <div style="text-align: center; color: maroon" th:if="${param.error}">This car is already in our workshop</div>
 <div style="text-align: center; color: blue" th:if="${param.done}">Car successfully added</div>
 <div class="container">
-<form th:object="${newCar}" method="post">
+<form style="margin-top: 20px" th:object="${newCar}" method="post">
     <div class="mb-3">
         <label for="name" class="form-label">Name</label>
         <input type="text" th:field="*{name}" class="form-control" id="name">

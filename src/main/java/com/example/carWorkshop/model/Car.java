@@ -50,12 +50,14 @@ public class Car {
     @Column(name = COLUMN_PREFIX + "isFixed", nullable = false)
     private boolean isFixed;
 
+    @Column(name = COLUMN_PREFIX + "repairDate")
+    private LocalDate repairDate;
+
     public Car(String name, String registerNumber, String model, String colour) {
         this.name = name;
         this.registerNumber = registerNumber;
         this.model = model;
         this.colour = colour;
-        this.registryDate = LocalDate.now();
         this.isFixed = false;
     }
 }

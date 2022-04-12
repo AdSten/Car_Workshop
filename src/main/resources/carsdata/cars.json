@@ -1,13 +1,5 @@
 [ {
-  "id" : "162f8a4b-3baa-4496-a5ea-153321fefdd7",
-  "name" : "name4",
-  "registerNumber" : "GWE 00213",
-  "model" : "Honda",
-  "colour" : "Silver",
-  "registryDate" : "2022-03-30",
-  "fixed" : false
-}, {
-  "id" : "32ba2451-48b8-48ad-874f-84f28dd33120",
+  "id" : "17def1e5-d2dd-4fba-b96d-555b1f998c7c",
   "name" : "name1",
   "registerNumber" : "GA 01001",
   "model" : "Audi",
@@ -15,15 +7,7 @@
   "registryDate" : "2022-03-29",
   "fixed" : false
 }, {
-  "id" : "58e5d79a-f171-4941-83e4-1a13f0f115ac",
-  "name" : "name5",
-  "registerNumber" : "GD AABB0",
-  "model" : "BMW",
-  "colour" : "Black",
-  "registryDate" : "2022-03-30",
-  "fixed" : false
-}, {
-  "id" : "76ebb9ba-ba4f-41f5-be2b-9303f79263af",
+  "id" : "39eb2a8c-a709-4ff5-92df-ead58530602d",
   "name" : "name3",
   "registerNumber" : "GPU 192AA",
   "model" : "KIA",
@@ -31,11 +15,36 @@
   "registryDate" : "2022-03-30",
   "fixed" : false
 }, {
-  "id" : "e6da82f1-c057-496d-b9c1-b338ce72830f",
+  "id" : "4342f0fb-23c8-4eb4-9cd5-d1d9c2d18c91",
+  "name" : "name5",
+  "registerNumber" : "GD AABB0",
+  "model" : "BMW",
+  "colour" : "Black",
+  "registryDate" : "2022-03-30",
+  "fixed" : false
+}, {
+  "id" : "556625e8-e0d5-4cbc-865a-c54905c75a73",
+  "name" : "name6",
+  "registerNumber" : "WE JDBDIS",
+  "model" : "Skoda",
+  "colour" : "Red",
+  "registryDate" : "2022-03-30",
+  "fixed" : false
+}, {
+  "id" : "5f12415b-ae43-4e57-96b6-c9111968baa7",
   "name" : "name2",
   "registerNumber" : "GD 020AA",
   "model" : "Suzuki",
   "colour" : "black",
   "registryDate" : "2022-03-30",
   "fixed" : false
+}, {
+  "id" : "79caab38-ec94-48df-9fc0-64f9aa9293b4",
+  "name" : "name4",
+  "registerNumber" : "GWE 00213",
+  "model" : "Honda",
+  "colour" : "Silver",
+  "registryDate" : "2022-03-30",
+  "fixed" : true,
+  "repairDate": "2022-03-30"
 } ]
