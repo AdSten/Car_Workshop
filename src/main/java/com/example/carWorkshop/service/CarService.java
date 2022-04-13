@@ -34,6 +34,10 @@ public class CarService {
         return carRepository.findById(id).get();
     }
 
+    public List<Car> getByKeyword(String keyword){
+        return carRepository.findAllByKeywordIgnoreCase(keyword);
+    }
+
     public void saveToFile() {
         List<Car> cars = carRepository.findAll();
         try {
@@ -46,7 +50,7 @@ public class CarService {
     public void saveRepairedCars(){
         List<Car> repairedCars = carRepository.findAllByRepairDate(LocalDate.now());
         try {
-            objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File("src/main/resources/carsdata/fixed/" + LocalDate.now()), repairedCars);
+            objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File("src/main/resources/carsdata/fixed/" + LocalDate.now() + ".json"), repairedCars);
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }

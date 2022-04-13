@@ -6,9 +6,9 @@ import com.example.carWorkshop.service.CarService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
 
 import java.time.LocalDate;
+import java.util.List;
 import java.util.UUID;
 
 
@@ -24,11 +24,17 @@ public class CarController {
         this.carRepository = carRepository;
     }
 
-    @GetMapping("")
-    public ModelAndView getAllCars(){
-        ModelAndView mav = new ModelAndView("cars");
-        mav.addObject("cars", carRepository.findAll());
-        return mav;
+    @RequestMapping(path = {"", "/search"})
+    public String getCars(Car car, Model model, String keyword){
+        if (keyword != null){
+            List<Car> carListByKeyword = carService.getByKeyword(keyword);
+            model.addAttribute("cars", carListByKeyword);
+        }
+        else {
+            List<Car> carList = carRepository.findAll();
+            model.addAttribute("cars", carList);
+        }
+        return "cars";
     }
 
     @GetMapping("/repair")

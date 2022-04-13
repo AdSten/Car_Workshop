@@ -1,0 +1,19 @@
+[ {
+  "id" : "544e0e03-88b0-44f2-b34e-bfce449e0140",
+  "name" : "name7",
+  "registerNumber" : "GD 00011",
+  "model" : "Honda",
+  "colour" : "Red",
+  "registryDate" : "2022-04-13",
+  "repairDate" : "2022-04-13",
+  "fixed" : true
+}, {
+  "id" : "7b4456b2-7e3c-4747-a22a-f900a2f1705a",
+  "name" : "name1",
+  "registerNumber" : "GA 01001",
+  "model" : "Audi",
+  "colour" : "red",
+  "registryDate" : "2022-03-29",
+  "repairDate" : "2022-04-13",
+  "fixed" : true
+} ]

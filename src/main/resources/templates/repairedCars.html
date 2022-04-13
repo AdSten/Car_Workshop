@@ -12,6 +12,10 @@
 <div class="container">
   <table style="margin-top: 50px" class="table table-dark table-hover">
     <thead>
+    <form th:action="@{/repaired/search}" method="get">
+      <input type="text" name="keyword" th:value="${keyword}">
+      <button type="submit" class="btn btn-info" >Search</button>
+    </form>
     <tr>
       <th scope="col">Name</th>
       <th scope="col">Register Number</th>
@@ -22,7 +26,7 @@
     </tr>
     </thead>
     <tbody>
-    <tr th:each="car: ${repairedCars}" th:if="${car.isFixed()==true}">
+    <tr th:each="car: ${repairedCars}" th:field="${car}" th:if="${car.isFixed()==true}">
       <td th:text="${car.getName()}">
       <td th:text="${car.getRegisterNumber()}">
       <td th:text="${car.getModel()}">
